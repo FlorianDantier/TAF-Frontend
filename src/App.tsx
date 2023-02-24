@@ -1,26 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Outlet } from 'react-router-dom'
+import { layout } from './styles/layout'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div style={layout.main}>
+    {/* Header et/ou menu ici si besoin */}
+    <div style={layout.child}><Outlet /></div>
+    {/* Footer et/ou menu ici si besoin */}
+    {/*  De manière générale, tout les éléments qui devront être visible en permanance se trouveront ici */}
+  </div>
+)
 
-export default App;
+export default App
