@@ -2,7 +2,7 @@ import React from 'react'
 import { createBrowserRouter, RouteObject } from 'react-router-dom'
 
 import App from '../App'
-import { HomePage } from '../pages/HomePage/HomePage'
+import { HomePage } from '../pages/HomePage'
 import { NotFoundPage } from '../pages/NotFoundPage'
 
 const routes: RouteObject[] = [

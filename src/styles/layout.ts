@@ -5,7 +5,6 @@ export const layout: { [key: string]: CSSProperties } = {
     margin: 0,
     display: 'flex',
     minHeight: '100vh',
-    flexDirection: 'column',
   },
   child: {
     display: 'flex',
