@@ -12,7 +12,7 @@ Faire le build de l'application
 ## Hiérarchie
 ├───src  
 │  
-├───components  
+├───components  (tous les composants UI servant à toute l'application)  
 │   ├───Base  
 │   │   ├───TAFButton  
 │   │   │       index.tsx  
@@ -22,7 +22,7 @@ Faire le build de l'application
 │   │           index.tsx  
 │   │           style.ts  
 │   │  
-│   └───Layout  
+│   └───Layout  (Tous les composants/partie de vue liées au layout)  
 │       ├───Footer  
 │       │       index.tsx  
 │       │       style.ts  
@@ -35,10 +35,10 @@ Faire le build de l'application
 │               index.tsx       
 │               style.ts        
 │       
-├───models      
+├───models  (Les modèles de l'application)  
 │       User.ts     
 │       
-├───pages       
+├───pages (Les différentes pages de l'app)     
 │   ├───HomePage        
 │   │       index.tsx       
 │   │       style.ts        
@@ -47,7 +47,7 @@ Faire le build de l'application
 │           index.tsx       
 │           style.ts        
 │       
-├───router      
+├───router (config du routeur, c'est ici où on déclare les routes)       
 │       router.tsx      
 │       
 ├───store       
@@ -68,10 +68,14 @@ Faire le build de l'application
 │   └───states      
 │           presence.state.ts       
 │       
-├───styles      
+├───styles (style global de l'application, n'iront pas ici les styles propre à un composant ou a une page)     
 │       layout.ts       
 │       
-└───utils       
+└───utils      
 Loadable.ts     
         
-        
+De manière générale, chaque composants/vues aura un dossier qui lui sera propre.  
+Ce dossier contiendra :
+* Un fichier index.tsx qui sera là ou sera déclaré le composant
+* Un fichier style.ts qui contiendra les styles nécessaire à la vue/composant. 
+
