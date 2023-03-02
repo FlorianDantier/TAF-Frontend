@@ -1,6 +1,6 @@
 import React from 'react'
-import { TextField } from '@mui/material'
+import { Typography } from '@mui/material'
 
-export const TAFTextField = () => (
-  <TextField />
+export const Menu = () => (
+  <Typography>Menu</Typography>
 )

@@ -68,7 +68,7 @@ Faire le build de l'application
 │   └───states      
 │           presence.state.ts       
 │       
-├───styles (style global de l'application, n'iront pas ici les styles propre à un composant ou a une page)     
+├───styles (style global de l'application, n'iront pas ici les styles propre à un composant ou à une page)     
 │       layout.ts       
 │       
 └───utils      
@@ -78,4 +78,5 @@ De manière générale, chaque composants/vues aura un dossier qui lui sera prop
 Ce dossier contiendra :
 * Un fichier index.tsx qui sera là ou sera déclaré le composant
 * Un fichier style.ts qui contiendra les styles nécessaire à la vue/composant. 
+* Un éventuel sous-dossier components, qui contiendra les composants uniquement liée à cette pages/composants. 
 
